@@ -1,0 +1,23 @@
+body { 
+    background-color: #424242; 
+    padding:none;
+}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+#welcome { 
+    background-image: url(images/cover-desk.jpg); 
+    background-size: cover;
+    text-align: center; 
+    color:white;
+
+}
+
