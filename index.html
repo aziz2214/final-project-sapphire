@@ -1,220 +1,231 @@
 <!DOCTYPE HTML>
-<html> 
+<html>
 
-<head> 
-    <title> The Sapphire Project </title>    
-    
-    
-    <!--  GOOGLE FONTS  (Roboto) -->  
+<head>
+    <title> The Sapphire Project </title>
+    <!--  GOOGLE FONTS  (Roboto) -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" type="text/css">
-    
-    <!-- "Material Design Lite" Stylesheet (Official Google material design framework) --> 
-    <link rel="stylesheet" href="mdl/material.min.css"> 
+    <!-- "Material Design Lite" Stylesheet (Official Google material design framework) -->
+    <link rel="stylesheet" href="mdl/material.min.css">
     <script src="mdl/material.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
     <!-- MYSTLE.CSS - Custom Stylesheet -->
-    <link rel="stylesheet" href="style.css"> 
-    
-
+    <link rel="stylesheet" href="style.css">
     <!-- MATERIALIZE CSS - Material Design Framework Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
-<!--    <link rel="stylesheet"  type="text/css" href="jquery.fullPage.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!--    <link rel="stylesheet"  type="text/css" href="jquery.fullPage.css"> -->
 </head>
-    
-<body> 
-    
+
+<body>
     <div class="navbar-fixed ">
-     <nav class="nav-extendd ink-accent-3" >
-        <div class="nav-wrapper  pink accent-3">
-          <a href="" class="brand-logo"><img src="logo.png" style="height:35px; padding-left:10px;"> The Sapphire Project</a>
-         
-          <ul class="tabs tabs-transparent " style="text-allign:right;">
-            <li class="right tab"><a href="#test1">Sign UP</a></li>
-            <li class="right tab"><a  href="#about">About</a></li>
-            <li class="right tab"><a class="active" href="#test4">Home</a></li>
-          </ul>
-            
-        </div>
-      </nav> 
-    </div><!-- NAV END-->
-        
-
-    
-      <main>  
-          
-          
-        <!-- HOME CONTAINER ------------------------------------------------> 
-        <div class="valign-wrapper row" style="height:100vh;" id="welcome">
-           <div class="col s12">
+        <nav class="nav-extendd ink-accent-3" id="header-top">
+            <div class="nav-wrapper  pink accent-3"> <a href="" class="brand-logo" style="padding-left:10px;">The Sapphire Project</a>
+                <a href="#welcome" class="brand-logo center"><img src="logo.png" style="height:35px; padding-left:10px;"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#welcome" class="waves-effect waves-light">HOME</a></li>
+                    <li><a href="#about" class="waves-effect waves-light ">ABOUT</a></li>
+                    <li><a href="#signup" class="waves-effect waves-light btn pink-text grey lighten-2 hoverable">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- NAV END-->
+    <main>
+        <!-- HOME CONTAINER ------------------------------------------------>
+        <!--  <div id="particles-js" style="position:absolute;"> </div>   Particles Animation Div -->
+        <div class="valign-wrapper row parallax-container" style="height:100vh;" id="welcome">
+            <div class="parallax"><img class="responsive-img parallax" src="images/cover-desk.jpg"></div>
+            <div class="col s12">
                 <h1> Welcome to the Sapphire Project </h1>
-               <h4> An inniative to provide free online resources <br> to non-profits and social ventures</h4>
-           </div>
-
+                <h4> An inniative to provide free online resources to <div class="element"> </div></h4> </div>
         </div>
-          
-        <!-- ABOUT CONTAINER ------------------------------------------------> 
-        <div class="row"> 
-          
-          
-          
-          
-        
+        <!-- ABOUT CONTAINER ------------------------------------------------>
+        <div id="particles-js" style="position:absolute; height:80vh; width:100%;"> </div>
+        <!-- Particles Animation Div - See Particles.JS below-->
+        <div class="row valign-wrapper" id="about" style="height:80vh;">
+            <div class="col s12 valign" style="padding-left:20%; padding-right:20%;">
+                <div class="card medium ">
+                    <div class="card-image "> <img class="" accesskey="" src="images/nyc.jpg"> <span class="card-title pink accent-3">A Little About Us</span> </div>
+                    <div class="card-content"> Sophire is a digital software agency in New York city – we wanted we do some good, so we started the Sapphire Project as a way to give back to the community. Essentially, the Sapphire project is a way to connect non-profit organizations and social ventures with developers and designers who want to use their talents to do some good. </div>
+                    <div class="card-action center"> <a href="#modal-contact" class="waves-effect waves-pink pink-text accent-3 btn-medium">CONTACT US</a> </div>
+                </div>
+            </div>
         </div>
-      
-          <!-- SIGN UP CONTAINER ------------------------------------------------> 
-
-            <div class="row" style="height:100vh; ">
+        <!-- ABOUT CONTAINER TWO ------------------------------------------------>
+        <div class="row  " id="" style="height:90vh; background-color:#37474f; margin-bottom:0px;">
+            <div class="valign">
+            <div style="padding:5%;" class="col s12 ">
+                <h1 class="white-text"> Our mission is simple.   </h1>
+                <h3 class="white-text"> We want to connect non-profits looking for help with developers and designers who want to use their talents for good. </h3> </div>
                 
-                <div class="col s6 valign-wrapper" style="padding:7%;">
-                     <div class="card hoverable valign">
-                        <div class="card-image">
-                          <img src="images/desk.jpg">
-                          <span class="card-title pink accent-3">For Designers & Developers</span>
+                
+            <div class="col s4">
+                <div class="card horizontal hoverable">
+                    <div class="card-image pink accent-3" style="padding:5%;">
+                        <h1> 1 </h1> </div>
+                    <div class="card-stacked">
+                        <div class="card-content valign-wrapper">
+                            <p>A non-profit posts a request for something they need done. </p>
                         </div>
-                        <div class="card-content">
-                          <p>We are always looking for talented people, who want to give back to the community. If that sounds like you, click on the pretty pink buton below!</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="waves-effect waves-light btn pink accent-3 hoverable">SIGN UP</a>
-                        </div>
-                      </div>
+                    </div>
                 </div>
-          
-                <div class="col s6" style="padding:7%;"> 
-                    <div class="card valign hoverable">
-                        <div class="card-image">
-                          <img src="images/np.jpg">
-                          <span class="card-title pink accent-3">For Non-Profits & Social Ventures</span>
-
-                        </div>
-                        <div class="card-content">
-                          <p> The process is simple. Sign Up for free, and upon your approval, you can begin posting jobs. We got your back! </p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#modal-np" class="waves-effect waves-light btn pink accent-3 hoverable">SIGN UP</a>
-                        </div>
-                      </div>
-          
-                </div>
-
             </div>
-            
-          
-       
-          
-
-          <!-- Modal Structure -->
-          <div id="modal-np" class="modal bottom-sheet">
+            <div class="col s4">
+                <div class="card horizontal hoverable">
+                    <div class="card-image pink accent-3" style="padding:5%;">
+                        <h1> 2 </h1> </div>
+                    <div class="card-stacked">
+                        <div class="card-content valign-wrapper">
+                            <p>Devlopers & designers interested in non-profit work can search through requests .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card horizontal hoverable">
+                    <div class="card-image pink accent-3" style="padding:5%;">
+                        <h1> 3 </h1> </div>
+                    <div class="card-stacked">
+                        <div class="card-content valign-wrapper">
+                            <p>It's a match made in heaven! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- SIGN UP CONTAINER ------------------------------------------------>
+        <canvas id="c"></canvas>
+        <div class="row" style="height:100vh; margin-bottom:0px;" id="signup">
+            <div class="col s6 valign-wrapper" style="padding:7%;">
+                <div class="card hoverable valign">
+                    <div class="card-image"> <img src="images/desk.jpg"> <span class="card-title pink accent-3">For Designers & Developers</span> </div>
+                    <div class="card-content">
+                        <p>We are always looking for talented people, who want to give back to the community. If that sounds like you, click on the pretty pink buton below!</p>
+                    </div>
+                    <div class="card-action"> <a href="#modal-np" class="waves-effect waves-light btn pink accent-3 hoverable">SIGN UP</a> </div>
+                </div>
+            </div>
+            <div class="col s6" style="padding:7%;">
+                <div class="card valign hoverable">
+                    <div class="card-image"> <img src="images/np.jpg"> <span class="card-title pink accent-3">For Non-Profits & Social Ventures</span> </div>
+                    <div class="card-content">
+                        <p> Whether youa re a non-profit organization, charity, social centure, school or educational organization, thisis for you. Sign Up for free, and upon your approval, you can begin posting jobs. We got your back! </p>
+                    </div>
+                    <div class="card-action"> <a href="#modal-np" class="waves-effect waves-light btn pink accent-3 hoverable">SIGN UP</a> </div>
+                </div>
+            </div>
+        </div>
+        <!-- SIGN UP Modal  -->
+        <div id="modal-np" class="modal bottom-sheet">
             <div class="modal-content">
-                   <div clas="row"> 
-                        <form class="col s10"> 
-
-                            <div class="row">
-                                <div class="input-field col s6">
-                                  <input id="first_name" type="text" class="validate">
-                                  <label for="first_name">First Name</label>
-                                </div>
-                                <div class="input-field col s6">
-                                  <input id="last_name" type="text" class="validate">
-                                  <label for="last_name">Last Name</label>
-                                </div>
+                <div class="row">
+                    <form class="col s10">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
                             </div>
-
-                            <div class="row"> 
-                                <div class="input-field col s6"> 
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email"> Email</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input id="organization" type="text" class="validate"> 
-                                    <label for="organization"> Organization </label>
-                                </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
                             </div>
-
-                            <div class="row"> 
-                                <div class="input-field col s12"> 
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">Message</label>
-                                    <input type="submit"> 
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email"> Email</label>
                             </div>
-                        </form>
+                            <div class="input-field col s6">
+                                <input id="organization" type="text" class="validate">
+                                <label for="organization"> Organization </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                                <input class="waves-effect waves-light btn pink accent-3 hoverable" type="submit"> </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="modal-footer">
-              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <div class="modal-footer"> <a href="#!" class=" modal-action modal-close waves-effect waves-pink btn-flat">Cancel</a> </div>
+        </div>
+        <!-- CONTACT Modal  -->
+        <div id="modal-contact" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <h4> hello! </h4>
+                    <p> Nice to meet you. We would love to hear from you! We are always looking for exciting partnership opportunities, and are also looking to expand our team! </p>
+                    <h3 class="pink-text accent-3"> hello@sophire.com </h3> </div>
             </div>
-          </div>
-
-          
-          
-    <!-- FLOATING ACTION BOTTOM RIGHT -->       
-    <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large red pink accent-3">
-          <i class="large material-icons">mode_edit</i>
-        </a>
-        <ul>
-          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-          <li><a href="#welcome" class="btn-floating green"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-      </div>
-    
-          
-              
-          
-        
-    </main> 
-    
-    <!-- FOOTER --> 
-    <footer class="page-footer grey darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <img src="logo.png" style="height:50px;">
-            <h5 class="white-text">The Sapphire Project</h5>
-            <p class="grey-text text-lighten-4">An inniative to provide online resources to non-profits and social ventures</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
+            <div class="modal-footer"> <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a> </div>
+        </div>
+        <!-- LOGIN Modal  -->
+        <div id="modal-login" class="modal ">
+            <div class="modal-content">
+                <div class="row">
+                    <form class="col s6">
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <input id="email" type="email" class="validate">
+                                <label for="email"> Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"> <a class=" modal-action modal-close waves-effect waves-pink btn-flat pink accent-3 white-text">LOGIN</a> <a class=" modal-action modal-close waves-effect waves-pink btn-flat">SIGNUP</a> </div>
+            </div>
+        </div>
+        <!-- FLOATING ACTION BOTTOM RIGHT -->
+        <div class="fixed-action-btn horizontal">
+            <a href="#modal-login" class="btn-floating btn-large red pink accent-3  tooltipped" data-position="top" data-delay="20" data-tooltip="Login"> <i class="large material-icons">person</i> </a>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#welcome">About Sophire</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Priacy Policy</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Terms of Use</a></li>
+                <li><a href="#welcome" class="btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="Scroll Up"><i class="material-icons">publish</i></a></li>
+                <li><a href="#modal-contact" class="btn-floating blue darken-1 tooltipped" data-position="top" data-delay="20" data-tooltip="Contact"><i class="material-icons">mail</i></a></li>
+                <li><a href="#modal-np" class="btn-floating green tooltipped" data-position="top" data-delay="20" data-tooltip="Sign Up"><i class="material-icons">add</i></a></li>
             </ul>
-          </div>
         </div>
-      </div>
-      <div class="footer-copyright pink accent-3">
-        <div class="container white-text">
-        Sophire.org © 2016 The Sapphire Project 
-        <a class="grey-text text-lighten-4 right" href="#!">Sophire.com</a>
+    </main>
+    <!-- FOOTER -->
+    <footer class="page-footer grey darken-4" style="margin-top:0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12"> <img src="logo.png" style="height:50px;">
+                    <h5 class="white-text">The Sapphire Project</h5>
+                    <p class="grey-text text-lighten-4">An inniative to provide online resources to non-profits and social ventures</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#welcome">About Sophire</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Priacy Policy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="footer-copyright pink accent-3">
+            <div class="container white-text"> Sophire.org © 2016 The Sapphire Project <a class="grey-text text-lighten-4 right" href="#!">Sophire.com</a> </div>
+        </div>
     </footer>
-
-    <!-- LOAD JAVASCRIPT FILES -->
+    <!-- LOAD JAVASCRIPT FILES ------------------------------------------------------------->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+    </script>
+    <!-- MATERIALIZE CSS - Material Design Framework - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <!-- Initialize FULLPAGE.JS -->
+    <script src="jquery.fullPage.js">
+    </script>
     
-<script 
-    src="http://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous">
-</script>
-    
-    
-
-  <!-- MATERIALIZE CSS - Material Design Framework - Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-          
-    
-    <!-- Initialize FULLPAGE.JS --> 
-    <script src="jquery.fullPage.js"> </script>
-    
-   <!-- <script> 
+    <!-- <script> 
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 //Navigation
@@ -288,44 +299,68 @@
             });
         });
     </script>-->
-
+    
     <script>
-    $(document).ready(function(){
-	/* This code is executed after the DOM has been completely loaded */
-
-        $('nav a,footer a.up').click(function(e){
-
-            // If a link has been clicked, scroll the page to the link's hash target:
-
-            $.scrollTo( this.hash || 0, 1500);
-            e.preventDefault();
+        $(document).ready(function () {
+            /* This code is executed after the DOM has been completely loaded */
+            $('nav a,footer a.up').click(function (e) {
+                // If a link has been clicked, scroll the page to the link's hash target:
+                $.scrollTo(this.hash || 0, 1500);
+                e.preventDefault();
+            });
         });
-
-    });
-        
     </script>
-    
-    <script> // MODAL FUNCTION 
-         $('.modal').modal({
-              dismissible: true, 
-              opacity: .5, 
-              in_duration: 300,
-              out_duration: 200, 
-              starting_top: '10%', 
-              ending_top: '10%', 
-              ready: function(modal, trigger) { // Callback for Modal open.
+    <script>
+        // MODAL FUNCTION 
+        $('.modal').modal({
+            dismissible: true
+            , opacity: .5
+            , in_duration: 300
+            , out_duration: 200
+            , starting_top: '10%'
+            , ending_top: '10%'
+            , ready: function (modal, trigger) { // Callback for Modal open.
                 console.log(modal, trigger);
-                },
-              complete: function() {  } // Callback for Modal close
             }
-          );
+            , complete: function () {} // Callback for Modal close
+        });
     </script>
-    
-    <script> //Resizing script for Message input in Form
-          $('#textarea1').val('');
-          $('#textarea1').trigger('autoresize');
+    <script>
+        //Resizing script for Message input in Form
+        $('#textarea1').val('');
+        $('#textarea1').trigger('autoresize');
     </script>
-
-</body>    
+    <!-- TYPED.JS - Jquery Plugin by https://github.com/mattboldt/typed.js/ -->
+    <script src="/typed.js-master/js/typed.js"></script>
+    <script>
+        $(function () {
+            $(".element").typed({
+                strings: ["non-profits", "charities", "social ventures"]
+                , typeSpeed: 1
+            });
+        });
+    </script>
+    <!-- PARTICLES.JS  - JS Plugin by  for particles effect -->
+    <script src="particles.js-master/particles.min.js"></script>
+    <script src="particles.js-master/app.js">
+    </script>
+    <script>
+        // Inialize JS for Parralax background image -> Provided by MaterializeCSS Framework
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+    <script src="anime-master/anime.min.js"></script>
+    <!--    http://codepen.io/alexzaworski/details/mEkvAG/-->
+    <script src="script.js"></script>
+    <script>
+        // Inialize Tooltip -> MaterializeCSS 
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({
+                delay: 30
+            });
+        });
+    </script>
+</body>
 
 </html>

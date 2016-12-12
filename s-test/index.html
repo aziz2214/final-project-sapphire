@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html> 
+
+<head> 
+    <title> The Sapphire Project </title>    
+    
+    
+    <!--  GOOGLE FONTS  (Roboto) -->  
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    
+    <!-- "Material Design Lite" Stylesheet (Official Google material design framework) --> 
+    <link rel="stylesheet" href="mdl/material.min.css"> 
+    <script src="mdl/material.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <!-- MYSTLE.CSS - Custom Stylesheet -->
+    <link rel="stylesheet" href="mystyle.css"> 
+    
+        <!-- Favicon --> 
+    <link rel="icon" href="favicon.png" type="image/png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="onepage-scroll-master/onepage-scroll.css"> 
+
+</head>
+    
+<body> 
+        
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"><div><img src="icons/logo.png" alt="The Sapphire Project" style="height:50px;">
+            </div>
+            </span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            
+            <button href="#cover-one" class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="color:white;"> Home </button>
+            <button href="#cover-two" class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="color:white;"> About </button>
+            <button href="#cover-three" class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="color:white;"> Services </button>
+            <button href="#cover-four" class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect" style="color:white;"> How it Works </button>
+            <button href="#cover-six"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"> Sign Up </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- SLIDE OUT NAVIGATION MENU -->    
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Sapphire Project</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#cover-two">About</a>
+      <a class="mdl-navigation__link" href="#cover-three">Services</a>
+      <a class="mdl-navigation__link" href="#cover-four">How it Works</a>
+      <a class="mdl-navigation__link" href="#cover-five">Sign Up</a>
+    </nav>
+  </div>
+    
+    
+        
+  <main class="main mdl-layout__content" style="background-color: #212121; padding:none; margin:none;" >
+    
+
+    <div class="page-content" id="fullpage" style="margin:0px;">
+        
+        
+        <section>
+            <div class="section" id="cover-one" style="height=100vh;">
+                <br><br><br><br><br>
+                <h1> Welcome to the Sapphire Project</h1> <br><br><br>
+                <h3> An iniative to provide online resources to charities, non-profits, and social ventures.</h3>
+                
+            </div>
+        </section>
+        
+        
+        <section>
+        <div class="section" id="cover-two">  
+                     
+            <h1> ABOUT</h1>
+                
+         </div>
+         </section>
+        
+        
+        <section>
+        <div  class="section" id="cover-three" >
+                <h1> Services</h1>
+            </div>
+            
+        </section>
+
+        <section>
+        <div class="section" id="cover-four" > 
+                <h3> How it Works </h3>
+
+            </div>
+        </section>
+    
+        
+        <section>
+        <canvas id="c"></canvas>
+
+        <div class="section mdl-grid" id="cover-six" > 
+           
+            <div class="mdl-cell mdl-cell--6-col mdl-cell--middle" >
+            
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="signup-dev">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">FOR DEVELOPERS and DESIGNERS</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris sagittis pellentesque lacus eleifend lacinia...
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      SIGN UP
+                    </a>
+                  </div>
+                  <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                      <i class="material-icons">share</i>
+                    </button>
+                  </div>
+                </div>
+                
+            </div>
+            
+            
+            
+        <div class="mdl-cell mdl-cell--6-col mdl-cell--middle" style="background-color:white;">
+               <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">FOR NON-PROFITS and SOCIAL VENTURES</h2>
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                      </div>
+                      <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                          SIGN UP
+                        </a>
+                      </div>
+                      <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                          <i class="material-icons">share</i>
+                        </button>
+                      </div>
+                </div>
+            
+            </div>
+                
+        </div>
+        </section>
+        
+    </main>
+      </div>
+    
+        
+           <!-- FOOOTER --> 
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">
+<img src="icons/logo.png" alt="The Sapphire Project" style="height:50px;">    </div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <button class="mdl-mini-footer__social-btn"></button>
+    <button class="mdl-mini-footer__social-btn"></button>
+    <button class="mdl-mini-footer__social-btn"></button>
+  </div>
+</footer>
+    
+</main>
+    <!-- LOADING JAVASCRIPT FILES -->
+    <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    
+    <script src="anime.min.js"></script>
+<!--    http://codepen.io/alexzaworski/details/mEkvAG/-->
+    <script src="script.js"></script>
+        
+<!--        https://github.com/VincentGarreau/particles.js-->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+        
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    
+  <!--  <script>
+        	$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+                autoscrolling:false,
+				'css3': true,
+				'sectionsColor': ['', '', '', ''],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['Home', 'About', 'How', 'Sign-up'],
+
+				'afterLoad': function(anchorLink, index){
+					if(index == 2){
+						$('#iphone3, #iphone2, #iphone4').addClass('active');
+					}
+				},
+
+				'onLeave': function(index, nextIndex, direction){
+					if (index == 3 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 3 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', nextIndex == 4);
+					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				}
+			});
+		});
+
+        </script>-->
+       <!-- 
+        <script src="onepage-scroll-master/jquery.onepage-scroll.js"></script>
+        <script> 
+        $(".main").onepage_scroll({
+   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   keyboard: true,                  // You can activate the keyboard controls
+   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                    // the browser's width is less than 600, the fallback will kick in.
+   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+});
+        </script>-->
+
+</body>    
+
+</html>

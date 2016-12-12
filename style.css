@@ -1,5 +1,5 @@
 body { 
-    background-color: #424242; 
+    background-color: #263238; 
     padding:none;
 }
   body {
@@ -21,3 +21,60 @@ body {
 
 }
 
+ /*
+::selection {
+  background: #f06292 ; /* Changes the tet highligh color to pink :)  */
+/*}*/
+
+/*::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 1px 1px 6px rgba(255,250,250,1); 
+}*/
+
+
+#particles-js { 
+    
+
+}
+
+#c {
+  display: block;
+  width: ;
+  height: 100vh;
+  cursor: pointer; 
+    position: absolute; 
+}
+
+
+
+/** CSS for TYPED.JS **/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

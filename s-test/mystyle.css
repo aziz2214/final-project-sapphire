@@ -1,0 +1,95 @@
+/* MYSTLE.CSS 
+
+Includes custom style rules. */
+
+
+/* Cover-One -> First row */ 
+
+
+#cover-one { 
+    color: #fff; 
+    background: url('images/cover-desk.jpg') center / cover;
+    text-align: center; 
+    background-color: #212121; 
+    vertical-align: middle; 
+    
+}
+
+
+
+#cover-two { 
+    color: #fff; 
+    /*background: url('images/cover-desk.jpg') center / cover;*/
+
+    text-align: center; 
+    background-color: #212121; 
+    vertical-align: middle; 
+    
+}
+
+
+#cover-three { 
+    color: #fff; 
+    /*background: url('images/cover-desk.jpg') center / cover;*/
+    text-align: center; 
+    background-color: #212121; 
+    vertical-align: middle; 
+    
+}
+
+
+
+#cover-four { 
+    color: #fff; 
+    /*background: url('images/cover-desk.jpg') center / cover;*/
+
+
+    text-align: center; 
+    background-color: #212121; 
+    vertical-align: middle; 
+    
+}
+
+
+
+#cover-five { 
+    color: #fff; 
+    /*background: url('images/cover-desk.jpg') center / cover;*/
+   
+    text-align: center; 
+    background-color: #212121; 
+    vertical-align: middle; 
+    
+}
+
+
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  cursor: pointer; 
+    z-index: -1;
+    position: absolute;
+}
+
+
+    .demo-card-wide.mdl-card {
+      width: 100%;
+    }
+    .demo-card-wide > .mdl-card__title .signup-dev{
+      color: #fff;
+      height: 200px;
+      background: url('/images/signup-dev.jpg') center / cover;
+    }
+    #signup-dev { 
+        color: #fff;
+        height: 176px;
+        background: url('/images/signup-dev.jpg') center / cover;
+    }
+
+    .demo-card-wide > .mdl-card__menu {
+      color: #fff;
+    }
+
+
