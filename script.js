@@ -27,6 +27,7 @@ function removeAnimation(animation) {
   if (index > -1) animations.splice(index, 1);
 }
 
+
 function calcPageFillRadius(x, y) {
   var l = Math.max(x - 0, cW - x);
   var h = Math.max(y - 0, cH - y);

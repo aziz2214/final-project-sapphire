@@ -31,26 +31,41 @@
     </div>
     <!-- NAV END-->
     <main>
+        
+        <div id="loader-wrapper" class="valign-wrapper" style="height:100vh;">
+           
+            <div id="loader" class="valign" style="margin:0 auto;">
+                 
+                <div class="preloader-wrapper big active" style="z-index:10000;">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+            
+            </div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        
+       
+        
         <!-- HOME CONTAINER ------------------------------------------------>
-        <!--  <div id="particles-js" style="position:absolute;"> </div>   Particles Animation Div -->
         <div class="valign-wrapper row parallax-container" style="height:100vh;" id="welcome">
             <div class="parallax"><img class="responsive-img parallax" src="images/cover-desk.jpg"></div>
             <div class="col s12">
                 <h1> Welcome to the Sapphire Project </h1>
-                <h4> An inniative to provide free online resources to <div class="element"> </div></h4> </div>
-        </div>
-        <!-- ABOUT CONTAINER ------------------------------------------------>
-        <div id="particles-js" style="position:absolute; height:80vh; width:100%;"> </div>
-        <!-- Particles Animation Div - See Particles.JS below-->
-        <div class="row valign-wrapper" id="about" style="height:80vh;">
-            <div class="col s12 valign" style="padding-left:20%; padding-right:20%;">
-                <div class="card medium ">
-                    <div class="card-image "> <img class="" accesskey="" src="images/nyc.jpg"> <span class="card-title pink accent-3">A Little About Us</span> </div>
-                    <div class="card-content"> Sophire is a digital software agency in New York city – we wanted we do some good, so we started the Sapphire Project as a way to give back to the community. Essentially, the Sapphire project is a way to connect non-profit organizations and social ventures with developers and designers who want to use their talents to do some good. </div>
-                    <div class="card-action center"> <a href="#modal-contact" class="waves-effect waves-pink pink-text accent-3 btn-medium">CONTACT US</a> </div>
-                </div>
+                <h4> An inniative to provide free online resources to <div class="element"> </div></h4> 
             </div>
         </div>
+ 
         <!-- ABOUT CONTAINER TWO ------------------------------------------------>
         <div class="row  " id="" style="height:90vh; background-color:#37474f; margin-bottom:0px;">
             <div class="valign">
@@ -113,6 +128,20 @@
                         <p> Whether youa re a non-profit organization, charity, social centure, school or educational organization, thisis for you. Sign Up for free, and upon your approval, you can begin posting jobs. We got your back! </p>
                     </div>
                     <div class="card-action"> <a href="#modal-np" class="waves-effect waves-light btn pink accent-3 hoverable">SIGN UP</a> </div>
+                </div>
+            </div>
+        </div>
+        
+        
+               <!-- ABOUT CONTAINER ------------------------------------------------>
+        <div id="particles-js" style="position:absolute; height:80vh; width:100%;"> </div>
+        <!-- Particles Animation Div - See Particles.JS below-->
+        <div class="row valign-wrapper" id="about" style="height:80vh;">
+            <div class="col s12 valign" style="padding-left:20%; padding-right:20%;">
+                <div class="card medium ">
+                    <div class="card-image "> <img class="" accesskey="" src="images/nyc.jpg"> <span class="card-title pink accent-3">A Little About Us</span> </div>
+                    <div class="card-content"> Sophire is a digital software agency in New York city – we wanted we do some good, so we started the Sapphire Project as a way to give back to the community. Essentially, the Sapphire project is a way to connect non-profit organizations and social ventures with developers and designers who want to use their talents to do some good. </div>
+                    <div class="card-action center"> <a href="#modal-contact" class="waves-effect waves-pink pink-text accent-3 btn-medium">CONTACT US</a> </div>
                 </div>
             </div>
         </div>
@@ -216,91 +245,24 @@
             <div class="container white-text"> Sophire.org © 2016 The Sapphire Project <a class="grey-text text-lighten-4 right" href="#!">Sophire.com</a> </div>
         </div>
     </footer>
-    <!-- LOAD JAVASCRIPT FILES ------------------------------------------------------------->
+    
+    <!-- LOAD JAVASCRIPT FILES____________________________________________ -->
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
     </script>
-    <!-- MATERIALIZE CSS - Material Design Framework - Compiled and minified JavaScript -->
+    
+    <!-- MATERIALIZE.CSS - Material Design Framework - Compiled and minified JavaScript and Functions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <!-- Initialize FULLPAGE.JS -->
-    <script src="jquery.fullPage.js">
-    </script>
-    
-    <!-- <script> 
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                //Navigation
-                menu: '#menu',
-                lockAnchors: false,
-                anchors:['.nav-extended', 'secondPage'],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['firstSlide', 'secondSlide'],
-                showActiveTooltip: false,
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom',
-
-                //Scrolling
-                css3: true,
-                scrollingSpeed: 700,
-                autoScrolling: true,
-                fitToSection: false,
-                fitToSectionDelay: 1000,
-                scrollBar: true,
-                easing: 'easeInOutCubic',
-                easingcss3: 'ease',
-                loopBottom: false,
-                loopTop: false,
-                loopHorizontal: false,
-                continuousVertical: true,
-                continuousHorizontal: false,
-                scrollHorizontally: true,
-                interlockedSlides: false,
-                dragAndMove: false,
-                offsetSections: true,
-                resetSliders: false,
-                fadingEffect: true,
-                normalScrollElements: ' #element1, .element2',
-                scrollOverflow: true,
-                scrollOverflowOptions: null,
-                touchSensitivity: 15,
-                normalScrollElementTouchThreshold: 5,
-                bigSectionsDestination: null,
-
-                //Accessibility
-                keyboardScrolling: true,
-                animateAnchor: true,
-                recordHistory: true,
-
-                //Design
-                controlArrows: true,
-                verticalCentered: true,
-                sectionsColor : ['white', ''],
-                paddingTop: '3em',
-                paddingBottom: '10px',
-                fixedElements: ' .footer',
-                responsiveWidth: 0,
-                responsiveHeight: 0,
-                responsiveSlides: false,
-
-                //Custom selectors
-                sectionSelector: '.section',
-                slideSelector: '.slide',
-
-                lazyLoading: true,
-
-                //events
-                onLeave: function(index, nextIndex, direction){},
-                afterLoad: function(anchorLink, index){},
-                afterRender: function(){},
-                afterResize: function(){},
-                afterResponsive: function(isResponsive){},
-                afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-                onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-            });
-        });
-    </script>-->
-    
+       
     <script>
+        
+        $(document).ready(function() {
+ 
+            setTimeout(function(){
+                $('body').addClass('loaded');
+                $('h1').css('color','#222222');
+            }, 3000);
+
+        });
         $(document).ready(function () {
             /* This code is executed after the DOM has been completely loaded */
             $('nav a,footer a.up').click(function (e) {
@@ -310,6 +272,7 @@
             });
         });
     </script>
+    
     <script>
         // MODAL FUNCTION 
         $('.modal').modal({
@@ -325,11 +288,30 @@
             , complete: function () {} // Callback for Modal close
         });
     </script>
+    
     <script>
-        //Resizing script for Message input in Form
+        //Resizing script for Message input in Form -> MateralizeCSS
         $('#textarea1').val('');
         $('#textarea1').trigger('autoresize');
     </script>
+    
+    <script>
+        // Inialize Tooltip -> MaterializeCSS 
+        $(document).ready(function () {
+            $('.tooltipped').tooltip({
+                delay: 30
+            });
+        });
+    </script>
+    
+     <script>
+        // Inialize JS for Parralax background image -> Provided by MaterializeCSS Framework
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+        
+    
     <!-- TYPED.JS - Jquery Plugin by https://github.com/mattboldt/typed.js/ -->
     <script src="/typed.js-master/js/typed.js"></script>
     <script>
@@ -340,27 +322,18 @@
             });
         });
     </script>
+    
     <!-- PARTICLES.JS  - JS Plugin by  for particles effect -->
     <script src="particles.js-master/particles.min.js"></script>
-    <script src="particles.js-master/app.js">
-    </script>
-    <script>
-        // Inialize JS for Parralax background image -> Provided by MaterializeCSS Framework
-        $(document).ready(function () {
-            $('.parallax').parallax();
-        });
-    </script>
+    <script src="particles.js-master/app.js"></script>
+   
+    
+   <!-- Anime.JS - Animation JS library --> 
+    
     <script src="anime-master/anime.min.js"></script>
-    <!--    http://codepen.io/alexzaworski/details/mEkvAG/-->
+    <!--  Color changing plugin for AnimeJS, can be found: http://codepen.io/alexzaworski/details/mEkvAG/ -->
     <script src="script.js"></script>
-    <script>
-        // Inialize Tooltip -> MaterializeCSS 
-        $(document).ready(function () {
-            $('.tooltipped').tooltip({
-                delay: 30
-            });
-        });
-    </script>
+ 
 </body>
 
 </html>
